@@ -1,2 +1,0 @@
-class Readme < ApplicationRecord
-end
