@@ -15,6 +15,7 @@
 |image|text||
 |text|text||
 |user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :users
 - belongs_to :groups
@@ -37,8 +38,6 @@
 |email|string|null: false|
 |password|string|null: false|
 |nickname|string|null: false|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
 ### Association
 - has_many :groups
 - has_many :comments
