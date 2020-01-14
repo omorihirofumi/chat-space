@@ -10,19 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200114085140) do
-
-  create_table "articles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "title"
-    t.string   "author"
-    t.text     "text",       limit: 65535
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
-  end
-
-  create_table "readmes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 0) do
 
 end
