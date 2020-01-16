@@ -1,12 +1,12 @@
 .side-bar
-  .side-bar__user-name 
+  .side-bar__user-name     
     .side-bar__user-name__user-box
       .side-bar__user-name__user-box__user
-        masa
+        = current_user.name
       .side-bar__user-name__user-box__menu
         =link_to "#", class:"side-bar__user-name__user-box__menu__icon1" do  
           = icon('fab', 'twitter', class:"side-bar__user-name__user-box__menu__icon1")
-        =link_to "#", class:"side-bar__user-name__user-box__menu__icon2" do
+        =link_to edit_user_path(current_user), class:"side-bar__user-name__user-box__menu__icon2" do
           = icon('fab', 'instagram', class:"side-bar__user-name__user-box__menu__icon2")
   .side-bar__group-list
     techcamp
