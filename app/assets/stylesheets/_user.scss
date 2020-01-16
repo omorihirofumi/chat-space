@@ -1,5 +1,5 @@
 .account-page {
-  &__account-page__inner {
+  .account-page__inner {
     width: 980px;
     margin: 60px auto;
     padding: 60px;
@@ -7,25 +7,25 @@
     border: 1px solid #ddd;
     border-radius: 5px;
 
-    &__account-page__inner--left, .account-page__inner--right {
+    .account-page__inner--left, .account-page__inner--right {
       float: left;
       width: 50%;
     }
-    &__after {
+    &:after {
       clear: both;
       content: "";
       display: block;
     }
   }
 
-  &__account-page__header {
+  .account-page__header {
     h2 {
       margin-bottom: 10px;
       letter-spacing: 3px;
       font-size: 40px;
       font-weight: 200;
 
-      &__after {
+      &:after {
         content: '';
         display: block;
         width: 60px;
@@ -40,7 +40,7 @@
       font-weight: 200;
     }
 
-    &__btn {
+    .btn {
       margin-top: 20px;
       color: #fff;
       background-color: #ccc;
@@ -48,10 +48,10 @@
     }
   }
 
-  &__field {
+  .field {
     margin-bottom: 10px;
 
-    &__field-label {
+    .field-label {
       padding: 10px 0;
       letter-spacing: 1px;
       font-size: 14px;
@@ -62,8 +62,8 @@
       }
     }
 
-    &__field-input {
-      %__input {
+    .field-input {
+      input {
         width: 100%;
         padding: 10px;
         letter-spacing: 1px;
@@ -71,7 +71,7 @@
     }
   }
 
-  &__btn {
+  .btn {
     display: inline-block;
     height: 50px;
     padding: 0 30px;
@@ -89,19 +89,19 @@
     background-color: #38aef0;
   }
 
-  &__field-label {
-    &__field_with_errors {
+  .field-label {
+    .field_with_errors {
       display: inline-block;
       color: #d65f4c;
       font-weight: 400;
     }
   }
 
-  &__field-input {
-    &__field_with_errors {
+  .field-input {
+    .field_with_errors {
       position: relative;
 
-      &__after {
+      &:after {
         content: '';
         display: block;
         position: absolute;
