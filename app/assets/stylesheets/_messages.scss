@@ -49,16 +49,27 @@
       height: calc(100vh - 100px);
       background-color:#2f3e51;
       padding-top: 20px;
-      font-size: 15px;
+      font-size: 30px;
       padding-left: 20px;
       font-weight: bold;
-      color: #ffffff;
+      
         
-        P{
-          font-size: 11px;
-          padding-top: 5px;
-          padding-bottom: 40px;
-        }     
+    &__group{
+      font-size: 11px;
+      padding-top: 5px;
+      padding-bottom: 40px;
+      color: #ffffff;
+
+      &__name{
+        color: #ffffff;
+
+      }
+
+      &__message{
+        color: #ffffff;
+
+      }
+    }     
   }
 }
 
@@ -80,11 +91,24 @@
       color: #333333;
       font-size: 20px;
 
-      P{
+      &__group{
+
+      }
+
+      &__user{
         padding-top: 15px;
         color: #999999;
         font-size: 12px;
+        
+
+        &__detail{
+          float: right;
+        }
+
       }
+
+    
+      
     }
 
     &__edit{
@@ -103,25 +127,38 @@
     height: calc(100vh - 190px);
     color: #333333;
     font-size: 16px;
-    display: inline-block;
     width: 100%;
     
-    &__message1{
+    &__upper-message{
       padding-top: 35px;
       padding-left: 40px;
-      display: block;
+      display: flex;
+      margin-bottom: 12px;
 
-      span1{
-        color: #999999;
-        font-size: 12px;
+      &__user-name{
       }
 
-      P{
-        color: #434A54;
-        padding-top: 12px;
+      &__date{
+        color: #999999;
+        padding-left: 5px;
+        font-size: 12px;
+      
       }
 
     }
+
+    &__lower-message{
+      font-size: 14px;
+      color: #434A54;
+      padding-left: 40px;
+
+      &__content{
+
+      }
+
+    }
+
+
     &__message2{
       margin-top: 46px;
       padding-left: 40px;
