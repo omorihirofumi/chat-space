@@ -10,9 +10,9 @@
           = icon('fab', 'instagram', class:"side-bar__user-name__user-box__menu__icon2")
   .side-bar__group-list
     - current_user.groups.each do |group|
-      .group
-        = link_to '#' do
-          .group__name
+      .side-bar__group-list__group
+        = link_to group_messages_path(group) do
+          .side-bar__group-list__group__name
             = group.name  
-          .group__message
-            メッセージはまだありません。
+          .side-bar__group-list__group__message
+            = group.show_last_message
