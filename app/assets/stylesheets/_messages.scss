@@ -128,6 +128,7 @@
     color: #333333;
     font-size: 16px;
     width: 100%;
+    overflow: scroll;
     
     &__upper-message{
       padding-top: 35px;
@@ -156,24 +157,7 @@
 
       }
 
-    }
-
-
-    &__message2{
-      margin-top: 46px;
-      padding-left: 40px;
-      display: block;
-
-      span2{
-        color: #999999;
-        font-size: 12px;
-      }
-
-      P{
-        color: #434A54;
-        padding-top: 12px;
-      }      
-    }
+    }   
   }
 
   &__message-form{
