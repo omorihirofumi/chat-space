@@ -2,7 +2,7 @@ $(function(){
   function buildHTML(message){
     if ( message.image ) {
       var html =
-       `<div class="chat-main__message-list" data-message-id=${message.id}>
+       `
           <div class="chat-main__message-list__upper-message">
             <div class="chat-main__message-list__upper-message__user-name">
               ${message.user_name}
@@ -17,11 +17,11 @@ $(function(){
             </p>
           </div>
           <img src=${message.image} >
-        </div>`
+        `
       return html;
     } else {
       var html =
-       `<div class="chat-main__message-list" data-message-id=${message.id}>
+       `
           <div class="chat-main__message-list__upper-message">
             <div class="chat-main__message-list__upper-message__user-name">
               ${message.user_name}
@@ -35,7 +35,7 @@ $(function(){
               ${message.content}
             </p>
           </div>
-        </div>`
+        `
       return html;
     };
   }  
@@ -43,7 +43,7 @@ $(function(){
     e.preventDefault();
     var formData = new FormData(this);
     var url = $(this).attr('action');
-    $('セレクタ').removeAttr('data-disable-with')
+    $('chat-main__message-form__new-message__submit-btn__send').removeAttr('data-disable-with')
     $.ajax({
       url: url,
       type: "POST",
