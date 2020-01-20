@@ -31,5 +31,5 @@
             = icon('fas', 'image')           
             = f.file_field:image, class: "chat-main__message-form__new-message__input-box__image__file"
         .chat-main__message-form__new-message__submit-btn
-          = f.submit "SEND", class: "chat-main__message-form__new-message__submit-btn__send"
+          = f.submit "SEND", class: "chat-main__message-form__new-message__submit-btn__send","data-disable-with": "送信中..."
 
