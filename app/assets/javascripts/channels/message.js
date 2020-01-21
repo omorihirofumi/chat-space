@@ -1,7 +1,7 @@
 $(function(){
   function buildHTML(message){
     if (message.content && message.image) {
-      var html =`<div class="message" data-message-id=` + message.id + `>
+      var html =`<div class="message" data-message-id= ${message.id} >
           <div class="chat-main__message-list__upper-message">
             <div class="chat-main__message-list__upper-message__user-name">
               ${message.user_name}
@@ -14,11 +14,11 @@ $(function(){
             <p class="chat-main__message-list__lower-message__content">
               ${message.content}
             </p>
-            <img src="` + message.image + `" class="chat-main__message-list__lower-message__image" >
+            <img src="${message.image}" class="chat-main__message-list__lower-message__image" >
         </div>
       </div>`
     } else if (message.content) {
-      var html =`<div class="message" data-message-id=` + message.id + `>
+      var html =`<div class="message" data-message-id= ${message.id}>
         <div class="chat-main__message-list__upper-message">
            <div class="chat-main__message-list__upper-message__user-name">
               ${message.user_name} 
@@ -34,7 +34,7 @@ $(function(){
         </div>
       </div>`
     } else if (message.image) {
-      var html =`<div class="message" data-message-id=` + message.id + `>
+      var html =`<div class="message" data-message-id=${message.id}>
         <div class="chat-main__message-list__upper-message">
           <div class="chat-main__message-list__upper-message__user-name">
             ${message.user_name} 
@@ -44,7 +44,7 @@ $(function(){
           </div>
         </div>
         <div class="chat-main__message-list__lower-message">
-          <img src="` + message.image + `" class="chat-main__message-list__lower-message__image" >
+          <img src="${message.image}" class="chat-main__message-list__lower-message__image" >
         </div>
       </div>`
     };
@@ -94,7 +94,7 @@ $(function(){
       }
     })
     .fail(function() {
-      console.log('alert');
+      alert('error');
     });
   };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
