@@ -9,9 +9,6 @@
         .chat-main__group-info__test__user__detail
           - @group.group_users.each do |group_user|
             = group_user.user.name
-      
-
-
 
     .chat-main__group-info__edit
       =link_to edit_group_path(@group), class:"chat-main__group-info__edit" do
