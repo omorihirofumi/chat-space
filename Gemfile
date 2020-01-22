@@ -63,3 +63,6 @@ gem 'haml-rails'
   gem 'factory_bot_rails'
   gem 'faker'
 end
+group :production do
+  gem 'unicorn', '5.4.1'
+end
