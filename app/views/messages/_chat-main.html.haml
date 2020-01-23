@@ -2,8 +2,7 @@
   .chat-main__group-info
     .chat-main__group-info__test
       .chat-main__group-info__test__group
-        - current_user.groups.each do |group|
-          = group.name      
+        = @group.name
       .chat-main__group-info__test__user
         member: 
         .chat-main__group-info__test__user__detail
@@ -11,8 +10,8 @@
             = group_user.user.name
 
     .chat-main__group-info__edit
-      =link_to edit_group_path(@group), class:"chat-main__group-info__edit" do
-        edit
+      =link_to edit_group_path(@group), class:"chat-main__group-info__edit__btn" do
+        Edit
 
   .chat-main__message-list
     = render partial: 'message', collection: @messages
@@ -28,5 +27,5 @@
             = icon('fas', 'image')           
             = f.file_field:image, class: "chat-main__message-form__new-message__input-box__image__file"
         .chat-main__message-form__new-message__submit-btn
-          = f.submit "SEND", class: "chat-main__message-form__new-message__submit-btn__send","data-disable-with": "送信中..."
+          = f.submit "Send", class: "chat-main__message-form__new-message__submit-btn__send","data-disable-with": "送信中..."
 

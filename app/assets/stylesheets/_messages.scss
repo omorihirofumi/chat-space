@@ -119,6 +119,12 @@
       margin-top: 28px ;
       line-height: 40px;
       padding: 0 20px;
+      border:1px solid;
+      
+      &__btn{
+        text-decoration: none;
+        color: #38aef0;
+      }
     }    
   }
 
@@ -203,7 +209,7 @@
           background-color: #38aef0;
           font-size: 16px;
           cursor: pointer;
-          color: #1a1d21;
+          color: white;
         }
       }
     }
